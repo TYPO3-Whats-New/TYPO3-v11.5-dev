@@ -1,0 +1,201 @@
+% ------------------------------------------------------------------------------
+% TYPO3 Slides for LaTeX (TYPO3 global settings, title slide, etc.)
+%
+% @author	Michael Schams <schams.net>
+% @license	Creative Commons BY-NC-SA 3.0
+% @link		https://typo3.org/help/documentation/whats-new/
+% @language	N/A
+% ------------------------------------------------------------------------------
+
+\mode<presentation>
+
+% pgf package (graphics)
+\usepackage{pgf}
+
+% ...
+\usepackage{relsize}
+
+% multiple columns
+\usepackage{multicol}
+
+% soure code
+\usepackage{listings}
+%\usepackage{courier}
+
+% ftp://ftp.tex.ac.uk/tex-archive/macros/latex/contrib/listings/listings.pdf
+\lstset{%
+	basicstyle=\scriptsize\ttfamily,
+	basewidth=0.5em,
+	keywordstyle=\color{blue}\ttfamily,
+	stringstyle=\color{red}\ttfamily,
+	commentstyle=\color{green}\ttfamily,
+	breaklines=true
+}
+
+% ...
+% http://mirror.math.ku.edu/tex-archive/macros/latex/contrib/adjustbox/adjustbox.pdf
+% \usepackage{adjustbox}
+
+% font package to get rid off warnings when rendering the document
+\usepackage{lmodern}
+
+% tabs
+\usepackage{tabto}
+
+% symbols (e.g. arrow right in chapter "Myth Buster")
+\usepackage{textcomp}
+
+% more symbols (http://www.ptep-online.com/ctan/symbols.pdf)
+% see document https://www.cs.cmu.edu/~bhudson/symbols-letter.pdf for more examples
+%\usepackage{amsmath,amssymb,latexsym}
+\usepackage{marvosym}
+\usepackage{pifont}
+
+% ...
+\usepackage{datetime}
+\renewcommand{\dateseparator}{/}
+\newcommand{\dateshort}{\twodigit\day \dateseparator \monthname \dateseparator \the\year}
+
+% use "box with shadow" as bullet points
+%\usepackage{pifont}
+%\setbeamertemplate{itemize items}{\ding{111}}
+
+% include colour definitions
+\include{beamerthemetypo3colors}
+
+% use default "square" as bullet points
+\setbeamertemplate{itemize items}[square]
+
+%\setbeamertemplate{section in toc}[square]
+\setbeamercolor{section in toc}{fg=black}
+
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[T1]{fontenc}
+\newcommand\sharefont{\fontfamily{typo3share}\selectfont}
+
+%\fontfamily{typo3share}\selectfont
+%\setbeamerfont{frame}{family={\fontfamily{typo3share}} }
+
+% \fontsize{x}{y}
+% where {x} is font size and {y} is the skip line size in pt
+\setbeamerfont{title}{size=\fontsize{20}{24}\bfseries}
+\setbeamerfont{subtitle}{size=\normalfont\Large\fontfamily{typo3share}}
+\setbeamerfont{author}{size=\normalsize}
+
+% custom font sizes
+% default sizes are documented here: http://texblog.net/help/latex/ltx-178.html
+% LaTeX Error: Command \smaller already defined.
+% \newcommand\ <smaller> {\fontsize{9}{11}\selectfont}
+
+% decrease font size of monospace inline texts \texttt{...}
+% ... TODO (the line below does not work)
+% \setttsize{\fontsize{6}{8}}%
+
+% footer colours
+\setbeamercolor{title in footer}{fg=black,bg=white}
+\setbeamercolor{logo in footer}{fg=black,bg=white}
+\setbeamercolor{orange bar in footer}{fg=white,bg=typo3orange}
+
+% ... *TODO* description
+\setbeamercolor{license on titlepage}{fg=black}
+\setbeamercolor{logo on titlepage}{fg=black}
+
+% ... *TODO* description
+\setbeamercolor{title}{fg=white}
+\setbeamercolor{subtitle}{fg=white}
+\setbeamercolor{author}{fg=white}
+
+% ...
+\setbeamersize{text margin left=1.4em,text margin right=1.4em}
+
+% specify path to images
+\graphicspath{{Images/}}
+
+% ------------------------------------------------------------------------------
+
+\setbeamertemplate{frametitle}{
+
+	\vspace{0.12cm}
+
+	\sharefont
+	\color{black}
+	%\insertframetitle
+	\textbf{\insertsection}
+
+	\begin{pgfpicture}{0cm}{-.4cm}{11.6cm}{-.4cm}%
+		\pgfsetcolor{typo3middlegrey}%
+		\pgfsetlinewidth{1pt}%
+		\pgfline{\pgfpoint{0cm}{-.2cm}}{\pgfpoint{11.6cm}{-.2cm}}%
+	\end{pgfpicture}%
+
+	\color{typo3middlegrey}
+	\smaller{\textbf{\insertframesubtitle}}
+}
+
+\defbeamertemplate*{title page}{customized}[1][]
+{
+	\color{white}
+	\begin{center}
+		\vspace{2cm}
+		\Huge\usebeamerfont{title}\inserttitle\par
+		\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par
+		\bigskip
+		\usebeamerfont{author}\insertauthor\par
+	\end{center}
+
+	\vspace{2.8cm}
+
+	\hbox{%
+		\begin{beamercolorbox}[wd=.5\paperwidth,ht=0.8cm,left,leftskip=10px]{license on titlepage}%
+			\color{white}%
+			% \tiny, \scriptsize, \footnotesize, \small, \normal
+			\scriptsize{%
+				\dateshort\par%
+				Creative Commons BY-NC-SA 3.0%
+			}%
+		\end{beamercolorbox}%
+
+		\begin{beamercolorbox}[wd=.5\paperwidth,ht=0.8cm,right,rightskip=30px]{logo on titlepage}%
+			\includegraphics[width=60px]{typo3logo-white}%
+		\end{beamercolorbox}%
+	}%
+}
+
+\defbeamertemplate*{footline}{typo3theme}
+{
+	\leavevmode%
+
+	\hbox{%
+		\begin{beamercolorbox}[wd=.5\paperwidth,ht=0.8cm,left,leftskip=10px]{title in footer}%
+			\sharefont%
+			\inserttitle%
+		\end{beamercolorbox}%
+
+		\begin{beamercolorbox}[wd=.5\paperwidth,ht=0.8cm,right,rightskip=10px]{logo in footer}%
+			\includegraphics[width=60px]{typo3logo}%
+		\end{beamercolorbox}%
+	}
+
+	\vspace{0.2cm}
+
+	\hbox{%
+		\begin{beamercolorbox}[wd=1\paperwidth,ht=0.2cm,center]{orange bar in footer}%
+		\end{beamercolorbox}%
+	}%
+	\vskip0pt
+}
+
+%\newcommand{\breakingchange}[1]{{%
+%	\color{red}
+%	{\begin{center}\uppercase{\textbf{#1}}\end{center}}%
+%}}
+
+\newcommand{\breakingchange}{%
+	\begingroup
+		\color{red}
+		{\begin{center}\uppercase{\textbf{BREAKING CHANGE!}}\end{center}}%
+	\endgroup
+}
+
+\mode
+<all>

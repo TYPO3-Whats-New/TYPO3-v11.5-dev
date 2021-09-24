@@ -1,0 +1,41 @@
+% ------------------------------------------------------------------------------
+% TYPO3 Version 11.5 - What's New (English Version)
+%
+% @author	Michael Schams <schams.net>
+% @license	Creative Commons BY-NC-SA 3.0
+% @link		https://typo3.org/help/documentation/whats-new/
+% @language	English
+% ------------------------------------------------------------------------------
+% Installation using Composer
+
+\begin{frame}[fragile]
+	\frametitle{Installation and Upgrade}
+	\framesubtitle{Composer-based Installation Method}
+
+	% decrease font size for code listing
+	\lstset{basicstyle=\fontsize{8}{10}\ttfamily}
+
+	\begin{itemize}
+		\item Installation using \href{https://getcomposer.org}{PHP Composer} under Linux, macOS, and Windows 10:
+\begin{lstlisting}
+$ cd /var/www/site/
+$ composer create-project typo3/cms-base-distribution:^11 typo3v11
+\end{lstlisting}
+
+		\item Alternatively, create your custom \texttt{composer.json} file and run:
+\begin{lstlisting}
+$ composer install
+\end{lstlisting}
+
+		\item The \href{https://get.typo3.org/misc/composer/helper}{Composer Helper}
+			online tool makes package selection easy
+
+		\item Further details are available in the
+			\href{https://docs.typo3.org/m/typo3/guide-installation/master/en-us/}{Installation and Upgrade Guide}
+
+		\item \textbf{Using Composer is the recommended installation method!}
+
+	\end{itemize}
+\end{frame}
+
+% ------------------------------------------------------------------------------
