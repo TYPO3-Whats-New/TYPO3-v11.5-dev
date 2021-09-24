@@ -1,0 +1,31 @@
+% ------------------------------------------------------------------------------
+% TYPO3 Version 11.5 - What's New (English Version)
+%
+% @author	Michael Schams <schams.net>
+% @license	Creative Commons BY-NC-SA 3.0
+% @link		https://typo3.org/help/documentation/whats-new/
+% @language	English
+% ------------------------------------------------------------------------------
+% Important | 95298 | Fluid Viewhelpers will be declared final in v12
+
+\begin{frame}[fragile]
+	\frametitle{Extbase and Fluid}
+	\framesubtitle{Fluid ViewHelpers}
+
+	% decrease font size for code listing
+	\lstset{basicstyle=\fontsize{6}{8}\ttfamily}
+
+	\begin{itemize}
+		\item All Fluid ViewHelper classes will be declared \texttt{final} in
+			TYPO3 v12
+		\item Third-party extensions can no longer extend them with own variants
+		\item Extension developers are advised to use the abstract classes
+			provided by Fluid\newline
+			\small(if they are not marked \texttt{\@internal})\normalsize
+		\item Developers are encouraged to make appropriate adjustments to their
+			custom Viewhelpers in TYPO3 v11 already
+	\end{itemize}
+
+\end{frame}
+
+% ------------------------------------------------------------------------------
