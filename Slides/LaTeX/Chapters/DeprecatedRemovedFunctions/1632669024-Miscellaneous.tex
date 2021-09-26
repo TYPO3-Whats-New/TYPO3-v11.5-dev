@@ -7,6 +7,7 @@
 % @language	English
 % ------------------------------------------------------------------------------
 % Deprecation | 95343 | Legacy hook for new content element wizard
+% Deprecation | 95322 | Legacy Element Browser logic
 
 \begin{frame}[fragile]
 	\frametitle{Deprecated/Removed Functions}
@@ -16,9 +17,10 @@
 	\lstset{basicstyle=\fontsize{8}{10}\ttfamily}
 
 	\begin{itemize}
-		\item The following hook has been marked as \textbf{deprecated}:
+		\item The following hooks have been marked as \textbf{deprecated}:
 \begin{lstlisting}
 $GLOBALS['TBE_MODULES_EXT']['xMOD_db_new_content_el']['addElClasses']
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['typo3/browse_links.php']['browserRendering']
 \end{lstlisting}
 
 	\end{itemize}
