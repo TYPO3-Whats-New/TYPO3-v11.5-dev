@@ -1,0 +1,54 @@
+% ------------------------------------------------------------------------------
+% TYPO3 Version 11.5 - What's New (English Version)
+%
+% @author	Michael Schams <schams.net>
+% @license	Creative Commons BY-NC-SA 3.0
+% @link		https://typo3.org/help/documentation/whats-new/
+% @language	English
+% ------------------------------------------------------------------------------
+% Deprecation | 95320 | Various method arguments in Authentication objects
+
+\begin{frame}[fragile]
+	\frametitle{Deprecated/Removed Functions}
+	\framesubtitle{Authentication Objects}
+
+	% decrease font size for code listing
+	\lstset{basicstyle=\fontsize{6}{8}\ttfamily}
+
+	\begin{itemize}
+		\item The \textit{first} arguments of the following methods have been
+			marked as \textbf{deprecated}:\normalsize
+			\small\texttt{TYPO3\textbackslash
+				CMS\textbackslash
+				Core\textbackslash
+				Authentication\textbackslash
+				AbstractUserAuthentication}\normalsize
+			\begin{itemize}
+				\item \texttt{->writeUC()}
+				\item \texttt{->unpack_uc()}
+			\begin{itemize}
+
+			\small\texttt{TYPO3\textbackslash
+				CMS\textbackslash
+				Core\textbackslash
+				Authentication\textbackslash
+				BackendUserAuthentication}\normalsize
+			\begin{itemize}
+				\item \texttt{->backendCheckLogin()}
+			\begin{itemize}
+
+		\item The \textit{third} argument of the following method has been marked as \textbf{deprecated}:
+			\small\texttt{TYPO3\textbackslash
+				CMS\textbackslash
+				Core\textbackslash
+				Authentication\textbackslash
+				BackendUserAuthentication}\normalsize
+			\begin{itemize}
+				\item \texttt{->isInWebMount()}
+			\begin{itemize}
+
+	\end{itemize}
+
+\end{frame}
+
+% ------------------------------------------------------------------------------
