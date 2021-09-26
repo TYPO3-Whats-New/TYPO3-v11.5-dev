@@ -13,36 +13,17 @@
 	\framesubtitle{\texttt{SectionMarkupGenerated} Events}
 
 	% decrease font size for code listing
-	\lstset{basicstyle=\fontsize{6}{8}\ttfamily}
+	\lstset{basicstyle=\fontsize{7}{9}\ttfamily}
 
 	\begin{itemize}
-		\item The following method has been marked as \textbf{deprecated}:\newline
-			\smaller
-				\texttt{TYPO3\textbackslash
-					CMS\textbackslash
-					Backend\textbackslash
-					View\textbackslash
-					Event\textbackslash
-					BeforeSectionMarkupGeneratedEvent->getPageLayoutView()}\newline
-				\texttt{TYPO3\textbackslash
-					CMS\textbackslash
-					Backend\textbackslash
-					View\textbackslash
-					Event\textbackslash
-					BeforeSectionMarkupGeneratedEvent->getLanguageId()}\newline
-				\texttt{TYPO3\textbackslash
-					CMS\textbackslash
-					Backend\textbackslash
-					View\textbackslash
-					Event\textbackslash
-					AfterSectionMarkupGeneratedEvent->getPageLayoutView()}\newline
-				\texttt{TYPO3\textbackslash
-					CMS\textbackslash
-					Backend\textbackslash
-					View\textbackslash
-					Event\textbackslash
-					AfterSectionMarkupGeneratedEvent->getLanguageId()}\newline
-			\normalsize
+		\item The following methods have been marked as \textbf{deprecated}:
+\begin{lstlisting}
+TYPO3\CMS\Backend\View\Event\BeforeSectionMarkupGeneratedEvent->getPageLayoutView()
+TYPO3\CMS\Backend\View\Event\BeforeSectionMarkupGeneratedEvent->getLanguageId()
+TYPO3\CMS\Backend\View\Event\AfterSectionMarkupGeneratedEvent->getPageLayoutView()
+TYPO3\CMS\Backend\View\Event\AfterSectionMarkupGeneratedEvent->getLanguageIdg()
+\end{lstlisting}
+
 	\end{itemize}
 
 \end{frame}
