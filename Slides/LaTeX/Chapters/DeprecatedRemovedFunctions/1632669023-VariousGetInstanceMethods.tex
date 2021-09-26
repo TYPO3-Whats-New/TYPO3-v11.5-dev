@@ -1,0 +1,36 @@
+% ------------------------------------------------------------------------------
+% TYPO3 Version 11.5 - What's New (English Version)
+%
+% @author	Michael Schams <schams.net>
+% @license	Creative Commons BY-NC-SA 3.0
+% @link		https://typo3.org/help/documentation/whats-new/
+% @language	English
+% ------------------------------------------------------------------------------
+% Deprecation | 95326 | Various getInstance() static methods on Singleton interfaces
+
+\begin{frame}[fragile]
+	\frametitle{Deprecated/Removed Functions}
+	\framesubtitle{Various \texttt{getInstance()} Methods}
+
+	% decrease font size for code listing
+	\lstset{basicstyle=\fontsize{8}{10}\ttfamily}
+
+	\begin{itemize}
+		\item The the following methods have been marked as \textbf{deprecated}:
+\begin{lstlisting}
+TYPO3\CMS\Core\Resource\Index\ExtractorRegistry::getInstance()
+TYPO3\CMS\Core\Resource\Index\FileIndexRepository::getInstance()
+TYPO3\CMS\Core\Resource\Index\MetaDataRepository::getInstance()
+TYPO3\CMS\Core\Resource\OnlineMedia\Helpers\OnlineMediaHelperRegistry::getInstance()
+TYPO3\CMS\Core\Resource\Rendering\RendererRegistry::getInstance()
+TYPO3\CMS\Core\Resource\TextExtraction\TextExtractorRegistry::getInstance()
+TYPO3\CMS\Form\Service\TranslationService::getInstance()
+TYPO3\CMS\T3editor\Registry\AddonRegistry::getInstance()
+TYPO3\CMS\T3editor\Registry\ModeRegistry::getInstance()
+\end{lstlisting}
+
+	\end{itemize}
+
+\end{frame}
+
+% ------------------------------------------------------------------------------
