@@ -1,0 +1,50 @@
+% ------------------------------------------------------------------------------
+% TYPO3 Version 11.5 - What's New (English Version)
+%
+% @author	Michael Schams <schams.net>
+% @license	Creative Commons BY-NC-SA 3.0
+% @link		https://typo3.org/help/documentation/whats-new/
+% @language	English
+% ------------------------------------------------------------------------------
+% Deprecation | 95261 | Public methods in SectionMarkupGenerated events
+
+\begin{frame}[fragile]
+	\frametitle{Deprecated/Removed Functions}
+	\framesubtitle{\texttt{SectionMarkupGenerated} Events}
+
+	% decrease font size for code listing
+	\lstset{basicstyle=\fontsize{7}{9}\ttfamily}
+
+	\begin{itemize}
+		\item The following method has been marked as \textbf{deprecated}:\newline
+			\small
+				\texttt{TYPO3\textbackslash
+					CMS\textbackslash
+					Backend\textbackslash
+					View\textbackslash
+					Event\textbackslash
+					BeforeSectionMarkupGeneratedEvent->getPageLayoutView()}\newline
+				\texttt{TYPO3\textbackslash
+					CMS\textbackslash
+					Backend\textbackslash
+					View\textbackslash
+					Event\textbackslash
+					BeforeSectionMarkupGeneratedEvent->getLanguageId()}\newline
+				\texttt{TYPO3\textbackslash
+					CMS\textbackslash
+					Backend\textbackslash
+					View\textbackslash
+					Event\textbackslash
+					AfterSectionMarkupGeneratedEvent->getPageLayoutView()}\newline
+				\texttt{TYPO3\textbackslash
+					CMS\textbackslash
+					Backend\textbackslash
+					View\textbackslash
+					Event\textbackslash
+					AfterSectionMarkupGeneratedEvent->getLanguageId()}\newline
+			\normalsize
+	\end{itemize}
+
+\end{frame}
+
+% ------------------------------------------------------------------------------
