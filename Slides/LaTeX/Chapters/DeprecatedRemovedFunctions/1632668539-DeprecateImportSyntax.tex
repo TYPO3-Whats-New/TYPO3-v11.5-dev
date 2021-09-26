@@ -1,0 +1,37 @@
+% ------------------------------------------------------------------------------
+% TYPO3 Version 11.5 - What's New (English Version)
+%
+% @author	Michael Schams <schams.net>
+% @license	Creative Commons BY-NC-SA 3.0
+% @link		https://typo3.org/help/documentation/whats-new/
+% @language	English
+% ------------------------------------------------------------------------------
+% Deprecation | 95349 | TypoScript: page.includeCSS.import
+% Deprecation | 95349 | TypoScript: page.includeCSSLibs.import
+
+\begin{frame}[fragile]
+	\frametitle{Deprecated/Removed Functions}
+	\framesubtitle{Including External CSS}
+
+	% decrease font size for code listing
+	\lstset{basicstyle=\fontsize{7}{9}\ttfamily}
+
+	\begin{itemize}
+		\item The option to use the \texttt{@import} syntax for including external
+			CSS files through TypoScript has been marked as \textbf{deprecated}:
+\begin{lstlisting}
+# deprecated:
+page = PAGE
+page.includeCSSLibs.file1 = fileadmin/benni.css
+page.includeCSSLibs.file1.import = 1
+\end{lstlisting}
+		\item Migration options:
+			\begin{itemize}
+				\item use the \texttt{<link>}-tag or
+				\item create an inlineCSS TypoScript manually
+			\end{itemize}
+	\end{itemize}
+
+\end{frame}
+
+% ------------------------------------------------------------------------------
