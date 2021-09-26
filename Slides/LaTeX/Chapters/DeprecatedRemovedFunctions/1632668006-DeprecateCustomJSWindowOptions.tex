@@ -1,0 +1,33 @@
+% ------------------------------------------------------------------------------
+% TYPO3 Version 11.5 - What's New (English Version)
+%
+% @author	Michael Schams <schams.net>
+% @license	Creative Commons BY-NC-SA 3.0
+% @link		https://typo3.org/help/documentation/whats-new/
+% @language	English
+% ------------------------------------------------------------------------------
+% Deprecation | 95351 | Custom JSWindow options in HMENU settings
+
+\begin{frame}[fragile]
+	\frametitle{Deprecated/Removed Functions}
+	\framesubtitle{Custom JSWindow Options}
+
+	% decrease font size for code listing
+	\lstset{basicstyle=\fontsize{6}{8}\ttfamily}
+
+	\begin{itemize}
+		\item The \texttt{HMENU}/\texttt{TMENU} options for opening links of a
+			menu in a custom JavaScript popup have been marked as \textbf{deprecated}:
+\begin{lstlisting}
+page.123 = HMENU
+page.123.1 = TMENU
+page.123.1.JSWindow = 1
+page.123.1.JSWindow.params = width=200,height=300,status=0,menubar=0
+\end{lstlisting}
+		\item Calling a frontend page with \texttt{HMENU} and \texttt{JSwindow}
+			popups will trigger a PHP deprecation warning
+	\end{itemize}
+
+\end{frame}
+
+% ------------------------------------------------------------------------------
