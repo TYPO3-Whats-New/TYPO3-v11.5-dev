@@ -1,0 +1,46 @@
+% ------------------------------------------------------------------------------
+% TYPO3 Version 11.5 - What's New (English Version)
+%
+% @author	Michael Schams <schams.net>
+% @license	Creative Commons BY-NC-SA 3.0
+% @link		https://typo3.org/help/documentation/whats-new/
+% @language	English
+% ------------------------------------------------------------------------------
+% Deprecation | 95343 | Legacy hook for new content element wizard
+% Deprecation | 95322 | Legacy Element Browser logic
+% Deprecation | 95164 | ext:backend BackendTemplateView
+% Deprecation | 95275 | RelationHandler->remapMM()
+
+\begin{frame}[fragile]
+	\frametitle{Deprecated/Removed Functions}
+	\framesubtitle{Miscellaneous (2)}
+
+	% decrease font size for code listing
+	\lstset{basicstyle=\fontsize{6}{8}\ttfamily}
+
+	\begin{itemize}
+		\item The following hooks have been marked as \textbf{deprecated}:
+\begin{lstlisting}
+$GLOBALS['TBE_MODULES_EXT']['xMOD_db_new_content_el']['addElClasses']
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['typo3/browse_links.php']['browserRendering']
+\end{lstlisting}
+
+		\item The following class has been marked as \textbf{deprecated}:\newline
+			\small\texttt{TYPO3\textbackslash
+				CMS\textbackslash
+				Backend\textbackslash
+				View\textbackslash
+				BackendTemplateView}\normalsize
+
+		\item The following method has been marked as \textbf{deprecated}:\newline
+			\small\texttt{TYPO3\textbackslash
+				CMS\textbackslash
+				Core\textbackslash
+				Database\textbackslash
+				RelationHandler->remapMM()}\normalsize
+
+	\end{itemize}
+
+\end{frame}
+
+% ------------------------------------------------------------------------------
