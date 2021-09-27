@@ -10,6 +10,7 @@
 % Deprecation | 95322 | Legacy Element Browser logic
 % Deprecation | 95164 | ext:backend BackendTemplateView
 % Deprecation | 95275 | RelationHandler->remapMM()
+% Deprecation | 95254 | Two FlexFormTools methods
 
 \begin{frame}[fragile]
 	\frametitle{Deprecated/Removed Functions}
@@ -32,12 +33,14 @@ $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['typo3/browse_links.php']['browserRend
 				View\textbackslash
 				BackendTemplateView}\normalsize
 
-		\item The following method has been marked as \textbf{deprecated}:\newline
-			\small\texttt{TYPO3\textbackslash
-				CMS\textbackslash
-				Core\textbackslash
-				Database\textbackslash
-				RelationHandler->remapMM()}\normalsize
+		\item The following methods have been marked as \textbf{deprecated}:
+\begin{lstlisting}
+TYPO3\CMS\Core\Database\RelationHandler->remapMM()
+\end{lstlisting}
+\begin{lstlisting}
+TYPO3\CMS\Core\Configuration\FlexForm\FlexFormTools->getArrayValueByPath()
+TYPO3\CMS\Core\Configuration\FlexForm\FlexFormTools->setArrayValueByPath()
+\end{lstlisting}
 
 	\end{itemize}
 
