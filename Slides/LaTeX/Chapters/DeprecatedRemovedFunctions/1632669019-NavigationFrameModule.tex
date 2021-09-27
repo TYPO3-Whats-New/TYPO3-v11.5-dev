@@ -1,0 +1,39 @@
+% ------------------------------------------------------------------------------
+% TYPO3 Version 11.5 - What's New (English Version)
+%
+% @author	Michael Schams <schams.net>
+% @license	Creative Commons BY-NC-SA 3.0
+% @link		https://typo3.org/help/documentation/whats-new/
+% @language	English
+% ------------------------------------------------------------------------------
+% Deprecation | 94094 | navigationFrameModule in Module Registration
+
+\begin{frame}[fragile]
+	\frametitle{Deprecated/Removed Functions}
+	\framesubtitle{Inline JavaScript in \texttt{fieldChangeFunc}}
+
+	% decrease font size for code listing
+	\lstset{basicstyle=\fontsize{8}{10}\ttfamily}
+
+	\begin{itemize}
+		\item The option to use an iframe in the navigation area for backend
+			modules through "\texttt{fieldChangeFunc}" has been marked as
+			\textbf{deprecated}:
+\begin{lstlisting}
+// deprecated:
+$this->data['parameterArray']['fieldChangeFunc']['example'] = "alert('demo');";
+$parameterArray['fieldChangeFunc']['example'] = "alert('demo');";
+\end{lstlisting}
+
+		\item The TYPO3 Core natively supports \textit{Web Components} which
+			should be used instead
+		\item See the
+			\href{https://docs.typo3.org/c/typo3/cms-core/master/en-us/Changelog/10.5/Deprecation-91787-DeprecateInlineJavaScriptInFieldChangeFunc.html}{changelog}
+			for further details and a
+			\href{https://github.com/ohader/demo_91787}{demo extension}
+			as a migration option
+	\end{itemize}
+
+\end{frame}
+
+% ------------------------------------------------------------------------------
