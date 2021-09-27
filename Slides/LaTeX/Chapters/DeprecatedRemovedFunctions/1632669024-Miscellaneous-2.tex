@@ -6,8 +6,6 @@
 % @link		https://typo3.org/help/documentation/whats-new/
 % @language	English
 % ------------------------------------------------------------------------------
-% Deprecation | 95343 | Legacy hook for new content element wizard
-% Deprecation | 95322 | Legacy Element Browser logic
 % Deprecation | 95164 | ext:backend BackendTemplateView
 % Deprecation | 95275 | RelationHandler->remapMM()
 % Deprecation | 95254 | Two FlexFormTools methods
@@ -22,17 +20,10 @@
 	\lstset{basicstyle=\fontsize{6}{8}\ttfamily}
 
 	\begin{itemize}
-		\item The following hooks have been marked as \textbf{deprecated}:
-\begin{lstlisting}
-$GLOBALS['TBE_MODULES_EXT']['xMOD_db_new_content_el']['addElClasses']
-$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['typo3/browse_links.php']['browserRendering']
-\end{lstlisting}
-
 		\item The following class has been marked as \textbf{deprecated}:
 \begin{lstlisting}
 TYPO3\CMS\Backend\View\BackendTemplateView
 \end{lstlisting}
-
 		\item The following methods have been marked as \textbf{deprecated}:
 \begin{lstlisting}
 TYPO3\CMS\Core\Database\RelationHandler->remapMM()
@@ -47,12 +38,10 @@ TYPO3\CMS\Core\Configuration\FlexForm\FlexFormTools->setArrayValueByPath()
 TPO3\CMS\Backend\Template\ModuleTemplate->getIconFactory()
 TPO3\CMS\Backend\Template\ModuleTemplate->getPageRenderer()
 \end{lstlisting}
-
 		\item The following property has been marked as \textbf{deprecated}:
 \begin{lstlisting}
 TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController->ATagParams
 \end{lstlisting}
-
 	\end{itemize}
 
 \end{frame}
