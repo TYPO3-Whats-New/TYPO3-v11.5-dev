@@ -13,13 +13,14 @@
 	\frametitle{Changes for Integrators and Developers}
 	\framesubtitle{TCA Option \texttt{groupName}}
 
-	% decrease font size for code listing
-	\lstset{basicstyle=\fontsize{6}{8}\ttfamily}
-
 	\begin{itemize}
-		\item Item A
-		\item Item B
-		\item Item C
+		\item The TYPO3 Core now makes use of the option "\texttt{groupName}"
+			for TCA configuration
+		\item The following keywords are defined by the Core:\newline
+			\small
+				\texttt{system}, \texttt{frontendaccess}, \texttt{backendaccess}, and \texttt{content}
+			\normalsize
+		\item Extensions that shipp their own groups continue to work
 	\end{itemize}
 
 \end{frame}
