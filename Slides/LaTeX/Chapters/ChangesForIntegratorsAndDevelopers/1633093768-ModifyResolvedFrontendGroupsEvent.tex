@@ -1,0 +1,24 @@
+% ------------------------------------------------------------------------------
+% TYPO3 Version 11.5 - What's New (English Version)
+%
+% @author	Michael Schams <schams.net>
+% @license	Creative Commons BY-NC-SA 3.0
+% @link		https://typo3.org/help/documentation/whats-new/
+% @language	English
+% ------------------------------------------------------------------------------
+% Feature | 95364 | Event to modify frontend user groups without authentication
+
+\begin{frame}[fragile]
+	\frametitle{Changes for Integrators and Developers}
+	\framesubtitle{New PSR-14 Event}
+
+	\begin{itemize}
+		\item The following new PSR-14 event has been introduced:\newline
+			\small\texttt{ModifyResolvedFrontendGroupsEvent}\normalsize
+		\item This event allows developers to attach frontend user groups
+			dynamically during a frontend request
+	\end{itemize}
+
+\end{frame}
+
+% ------------------------------------------------------------------------------
