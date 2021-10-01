@@ -1,0 +1,28 @@
+% ------------------------------------------------------------------------------
+% TYPO3 Version 11.5 - What's New (English Version)
+%
+% @author	Michael Schams <schams.net>
+% @license	Creative Commons BY-NC-SA 3.0
+% @link		https://typo3.org/help/documentation/whats-new/
+% @language	English
+% ------------------------------------------------------------------------------
+% Important | 95384 | TCA internal_typedb optional for typegroup
+
+\begin{frame}[fragile]
+	\frametitle{Changes for Integrators and Developers}
+	\framesubtitle{TCA Option \texttt{internal\_type}}
+
+	\begin{itemize}
+		\item When the TCA type \texttt{group} is used, the option
+			\texttt{internal\_type} defines which type of record can be
+			referenced\newline
+			\small(valid values are \texttt{folder} and \texttt{db})\normalsize
+		\item Since \texttt{db} is commonly used, TYPO3 now uses this value as
+			the default
+		\item This also means that extension developers can omit the option
+			\texttt{internal\_type} in most cases
+	\end{itemize}
+
+\end{frame}
+
+% ------------------------------------------------------------------------------
