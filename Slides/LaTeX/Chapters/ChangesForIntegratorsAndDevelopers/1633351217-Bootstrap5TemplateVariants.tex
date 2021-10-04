@@ -1,0 +1,46 @@
+% ------------------------------------------------------------------------------
+% TYPO3 Version 11.5 - What's New (English Version)
+%
+% @author	Michael Schams <schams.net>
+% @license	Creative Commons BY-NC-SA 3.0
+% @link		https://typo3.org/help/documentation/whats-new/
+% @language	English
+% ------------------------------------------------------------------------------
+% Feature | 94868 | Introduce Bootstrap 5 compatible and accessible templates
+
+\begin{frame}[fragile]
+	\frametitle{Changes for Integrators and Developers}
+	\framesubtitle{Bootstrap 5 Compatible Templates}
+
+	% decrease font size for code listing
+	\lstset{basicstyle=\fontsize{6}{8}\ttfamily}
+
+	\begin{itemize}
+		\item Bootstrap version 5 compatible templates have been added to the
+			Form Framework
+		\item These template variants are stored in\newline
+			\small\texttt{EXT:form/Resources/Private/Frontend/Version2/}\normalsize
+		\item To customize the look and feel, only the appropriate CSS classes
+			need to be defined
+		\item However, TYPO3 continues to render the old variants by default
+			to prevent an existing setup to break
+		\item The new templates need to be explicitly enabled:
+\begin{lstlisting}
+TYPO3:
+  CMS:
+    Form:
+      prototypes:
+        standard:
+          formElementsDefinition:
+            Form:
+              renderingOptions:
+                templateVariant: version2
+\end{lstlisting}
+
+		\item See \href{https://docs.typo3.org/c/typo3/cms-core/master/en-us/Changelog/11.5/Feature-94868-IntroduceBootstrap5CompatibleAndAccessibleTemplates.html}{changelog}
+			for further details
+	\end{itemize}
+
+\end{frame}
+
+% ------------------------------------------------------------------------------
