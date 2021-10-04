@@ -1,0 +1,29 @@
+% ------------------------------------------------------------------------------
+% TYPO3 Version 11.5 - What's New (English Version)
+%
+% @author	Michael Schams <schams.net>
+% @license	Creative Commons BY-NC-SA 3.0
+% @link		https://typo3.org/help/documentation/whats-new/
+% @language	English
+% ------------------------------------------------------------------------------
+% Deprecation | 95326 | Various getInstance() static methods on Singleton interfaces
+
+\begin{frame}[fragile]
+	\frametitle{Deprecated/Removed Functions}
+	\framesubtitle{Various \texttt{getInstance()} Methods}
+
+	% decrease font size for code listing
+	\lstset{basicstyle=\fontsize{6}{8}\ttfamily}
+
+	\begin{itemize}
+		\item Using RequireJS callback functions has been marked as
+			\textbf{deprecated}\newline
+			\small(for example: \texttt{\$resultArray['requireJsModules']} with scalar \texttt{string})\normalsize
+		\item Migration option: replace by \texttt{JavaScriptModuleInstruction} declaration.
+		\item href{https://docs.typo3.org/c/typo3/cms-core/master/en-us/Changelog/10.5/Deprecation-95200-DeprecateRequireJSCallbacksAsInlineJavaScript.html}{changelog}
+			for further details and migration options
+	\end{itemize}
+
+\end{frame}
+
+% ------------------------------------------------------------------------------
