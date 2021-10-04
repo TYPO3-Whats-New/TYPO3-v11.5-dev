@@ -20,23 +20,11 @@
 			Form Framework
 		\item These template variants are stored in\newline
 			\small\texttt{EXT:form/Resources/Private/Frontend/Version2/}\normalsize
-		\item To customize the look and feel, only the appropriate CSS classes
-			need to be defined
+		\item In many cases, only the appropriate CSS classes need to be defined
+			to customize the look and feel of the templates
 		\item However, TYPO3 continues to render the old variants by default
 			to prevent an existing setup to break
 		\item The new templates need to be explicitly enabled:
-\begin{lstlisting}
-TYPO3:
-  CMS:
-    Form:
-      prototypes:
-        standard:
-          formElementsDefinition:
-            Form:
-              renderingOptions:
-                templateVariant: version2
-\end{lstlisting}
-
 		\item See \href{https://docs.typo3.org/c/typo3/cms-core/master/en-us/Changelog/11.5/Feature-94868-IntroduceBootstrap5CompatibleAndAccessibleTemplates.html}{changelog}
 			for further details
 	\end{itemize}
