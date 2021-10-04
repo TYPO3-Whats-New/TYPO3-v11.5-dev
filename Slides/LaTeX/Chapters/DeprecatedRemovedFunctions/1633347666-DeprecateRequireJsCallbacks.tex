@@ -10,7 +10,7 @@
 
 \begin{frame}[fragile]
 	\frametitle{Deprecated/Removed Functions}
-	\framesubtitle{Various \texttt{getInstance()} Methods}
+	\framesubtitle{RequireJS Callback Functions}
 
 	% decrease font size for code listing
 	\lstset{basicstyle=\fontsize{6}{8}\ttfamily}
@@ -19,8 +19,8 @@
 		\item Using RequireJS callback functions has been marked as
 			\textbf{deprecated}\newline
 			\small(for example: \texttt{\$resultArray['requireJsModules']} with scalar \texttt{string})\normalsize
-		\item Migration option: replace by \texttt{JavaScriptModuleInstruction} declaration.
-		\item href{https://docs.typo3.org/c/typo3/cms-core/master/en-us/Changelog/10.5/Deprecation-95200-DeprecateRequireJSCallbacksAsInlineJavaScript.html}{changelog}
+		\item These calls should be replace by new \texttt{JavaScriptModuleInstruction} declarations
+		\item \href{https://docs.typo3.org/c/typo3/cms-core/master/en-us/Changelog/10.5/Deprecation-95200-DeprecateRequireJSCallbacksAsInlineJavaScript.html}{changelog}
 			for further details and migration options
 	\end{itemize}
 
