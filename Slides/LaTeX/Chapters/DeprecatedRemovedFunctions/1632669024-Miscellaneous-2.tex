@@ -10,7 +10,7 @@
 % Deprecation | 95275 | RelationHandler->remapMM()
 % Deprecation | 95254 | Two FlexFormTools methods
 % Deprecation | 95235 | Public getter of services in ModuleTemplate
-% Deprecation | 95219 | TypoScriptFrontendController->ATagParams
+% Deprecation | 91814 | Deprecate AbstractControl::setOnClick
 
 \begin{frame}[fragile]
 	\frametitle{Deprecated/Removed Functions}
@@ -38,9 +38,10 @@ TYPO3\CMS\Core\Configuration\FlexForm\FlexFormTools->setArrayValueByPath()
 TPO3\CMS\Backend\Template\ModuleTemplate->getIconFactory()
 TPO3\CMS\Backend\Template\ModuleTemplate->getPageRenderer()
 \end{lstlisting}
-		\item The following property has been marked as \textbf{deprecated}:
+\vspace{-0.2cm}
 \begin{lstlisting}
-TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController->ATagParams
+\TYPO3\CMS\Backend\Template\Components\AbstractControl->setOnClick()
+\TYPO3\CMS\Backend\Template\Components\AbstractControl->getOnClick()
 \end{lstlisting}
 	\end{itemize}
 
