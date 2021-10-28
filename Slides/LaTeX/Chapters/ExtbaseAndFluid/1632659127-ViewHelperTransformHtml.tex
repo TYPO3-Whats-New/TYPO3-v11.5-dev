@@ -15,12 +15,12 @@
 	\lstset{basicstyle=\fontsize{8}{10}\ttfamily}
 
 	\begin{itemize}
-		\item A new ViewHelper has been introduced:\newline
+		\item Le ViewHelper suivant est introduit~:\newline
 			\small\texttt{<f:transform.html>}\normalsize
-		\item The ViewHelper resolves and transforms individual TYPO3 link handlers
-			such as \texttt{t3://}-URIs
-		\item It is independent from any TypoScript configuration and works
-			without mixing concerns in \small\texttt{ContentObjectRenderer::parseFunc}
+		\item Ce ViewHelper résoud et transforme les gestionnaires de lien TYPO3 comme
+			les adresses \texttt{t3://}
+		\item Il est indépendant de toute configuration TypoScript et travail
+			sans mélanger les sujet avec \small\texttt{ContentObjectRenderer::parseFunc}
 \begin{lstlisting}
 <f:transform.html selector="a.href,div.data-uri">
   <a href="t3://page?uid=1" class="page">visit</a>
