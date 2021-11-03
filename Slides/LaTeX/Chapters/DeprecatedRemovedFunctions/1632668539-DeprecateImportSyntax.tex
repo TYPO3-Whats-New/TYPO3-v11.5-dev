@@ -10,24 +10,24 @@
 
 \begin{frame}[fragile]
 	\frametitle{Fonctions dépréciées/retirées}
-	\framesubtitle{Including External CSS}
+	\framesubtitle{Inclusion de CSS externe}
 
 	% decrease font size for code listing
 	\lstset{basicstyle=\fontsize{7}{9}\ttfamily}
 
 	\begin{itemize}
-		\item The option to use the \texttt{@import} syntax for including external
-			CSS files through TypoScript has been marked as \textbf{deprecated}:
+		\item L'option d'utilisation de la syntaxe \texttt{@import} pour inclure des fichiers CSS
+			externes par TypoScript est marquée \textbf{dépréciée}~:
 \begin{lstlisting}
 # deprecated:
 page = PAGE
 page.includeCSSLibs.file1 = fileadmin/benni.css
 page.includeCSSLibs.file1.import = 1
 \end{lstlisting}
-		\item Migration options:
+		\item Options de migration~:
 			\begin{itemize}
-				\item use the \texttt{<link>}-tag or
-				\item create an inlineCSS TypoScript manually
+				\item utiliser la balise \texttt{<link>} ou
+				\item crée manuellement une inclusion CSS en TypoScript
 			\end{itemize}
 	\end{itemize}
 

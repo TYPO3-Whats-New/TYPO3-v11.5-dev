@@ -12,23 +12,23 @@
 
 \begin{frame}[fragile]
 	\frametitle{Fonctions dépréciées/retirées}
-	\framesubtitle{Miscellaneous (1)}
+	\framesubtitle{Divers (1)}
 
 	% decrease font size for code listing
 	\lstset{basicstyle=\fontsize{6}{8}\ttfamily}
 
 	\begin{itemize}
-		\item Calling the DataHandler \texttt{process\_cmdmap} with an incoming
-			command for \texttt{inlineLocalizeSynchronize} and a payload
-			consisting of comma-separated values triggers a deprecation warning
+		\item Appeler la méthode \texttt{process\_cmdmap} de DataHandler avec une
+			commande pour \texttt{inlineLocalizeSynchronize} et une valeur sous forme
+			d'une liste séparée par des virgules déclenche un avertissement de dépréciation
 
-		\item The following hooks have been marked as \textbf{deprecated}:
+		\item Ces hooks sont marqués \textbf{dépréciés}~:
 \begin{lstlisting}
 $GLOBALS['TBE_MODULES_EXT']['xMOD_db_new_content_el']['addElClasses']
 $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['typo3/browse_links.php']['browserRendering']
 \end{lstlisting}
 
-		\item The following method has been marked as \textbf{deprecated}:
+		\item Cette méthode est marquée \textbf{dépréciée}~:
 \begin{lstlisting}
 \TYPO3\CMS\Core\Utility\GeneralUtility->isAbsPath()
 \end{lstlisting}

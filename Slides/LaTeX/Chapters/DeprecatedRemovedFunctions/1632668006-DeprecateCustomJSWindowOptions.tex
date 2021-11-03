@@ -9,14 +9,14 @@
 
 \begin{frame}[fragile]
 	\frametitle{Fonctions dépréciées/retirées}
-	\framesubtitle{Custom JSWindow Options}
+	\framesubtitle{Options JSWindow}
 
 	% decrease font size for code listing
 	\lstset{basicstyle=\fontsize{7}{9}\ttfamily}
 
 	\begin{itemize}
-		\item The \texttt{HMENU}/\texttt{TMENU} options for opening links of a
-			menu in a custom JavaScript popup have been marked as \textbf{deprecated}:
+		\item Les options de \texttt{HMENU}/\texttt{TMENU} pour ouvrir les liens
+			du menu dans une pop-up JavaScript personnalisée sont marquées \textbf{dépréciées}~:
 \begin{lstlisting}
 # deprecated:
 page.123 = HMENU
@@ -24,8 +24,8 @@ page.123.1 = TMENU
 page.123.1.JSWindow = 1
 page.123.1.JSWindow.params = width=200,height=300,status=0,menubar=0
 \end{lstlisting}
-		\item Calling a frontend page with \texttt{HMENU} and \texttt{JSwindow}
-			popups will trigger a PHP deprecation warning
+		\item Accéder à une page frontend avec \texttt{HMENU} et les popus \texttt{JSwindow}
+			déclenchera un avertissement de dépréciation
 	\end{itemize}
 
 \end{frame}

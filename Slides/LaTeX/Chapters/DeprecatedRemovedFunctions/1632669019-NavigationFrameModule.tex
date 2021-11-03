@@ -9,28 +9,27 @@
 
 \begin{frame}[fragile]
 	\frametitle{Fonctions dépréciées/retirées}
-	\framesubtitle{Inline JavaScript in \texttt{fieldChangeFunc}}
+	\framesubtitle{JavaScript dans \texttt{fieldChangeFunc}}
 
 	% decrease font size for code listing
 	\lstset{basicstyle=\fontsize{7}{9}\ttfamily}
 
 	\begin{itemize}
-		\item The option to use an iframe in the navigation area for backend
-			modules through "\texttt{fieldChangeFunc}" has been marked as
-			\textbf{deprecated}:
+		\item L'insertion de code JavaScript par le champ «~\texttt{fieldChangeFunc}~»
+		    lors de la mise à jour d'un champ est marquée \textbf{dépréciée}~:
 \begin{lstlisting}
 // deprecated:
 $this->data['parameterArray']['fieldChangeFunc']['example'] = "alert('demo');";
 $parameterArray['fieldChangeFunc']['example'] = "alert('demo');";
 \end{lstlisting}
 
-		\item The TYPO3 Core natively supports \textit{Web Components} which
-			should be used instead
-		\item See the
-			\href{https://docs.typo3.org/c/typo3/cms-core/master/en-us/Changelog/11.5/Deprecation-91787-DeprecateInlineJavaScriptInFieldChangeFunc.html}{changelog}
-			for migration options and a
-			\href{https://github.com/ohader/demo_91787}{demo extension}
-			as an example
+		\item Le noyau de TYPO3 prend en charge les \textit{Composants Web} nativement qui doivent
+			être utilisés à la place
+		\item Voir le
+			\href{https://docs.typo3.org/c/typo3/cms-core/master/en-us/Changelog/11.5/Deprecation-91787-DeprecateInlineJavaScriptInFieldChangeFunc.html}{journal des changements (en)}
+			pour les options de migration et une
+			\href{https://github.com/ohader/demo_91787}{extension de démonstration}
+			comme exemple
 	\end{itemize}
 
 \end{frame}
