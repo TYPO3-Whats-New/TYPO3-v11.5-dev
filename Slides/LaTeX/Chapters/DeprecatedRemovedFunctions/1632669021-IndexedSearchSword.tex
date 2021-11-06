@@ -18,10 +18,11 @@
 	\begin{itemize}
 		\item The TypoScript option \texttt{parseFunc.sword} allows to wrap search
 			words in a special wrap when \texttt{no\_cache = 1} is set
-		\item This functionality has been deprecated
-		\item Installations are affected that are accessed with, for example,
-			a request such as:\newline
+		\item Requests such as the following now trigger a deprecation warning
+			if a custom sword wrap has been configured:\newline
 			\smaller\texttt{https://example.com/?no\_cache=1\&sword\_list\%5B\%5D=search}\normalsize
+		\item Set \texttt{lib.parseFunc.sword} to an empty string to disable
+			the functionality and to supress the PHP error \texttt{E\_USER\_DEPRECATED}
 	\end{itemize}
 
 \end{frame}
