@@ -8,20 +8,20 @@
 % Important | 95298 | Fluid Viewhelpers will be declared final in v12
 
 \begin{frame}[fragile]
-	\frametitle{Extbase and Fluid}
+	\frametitle{Extbase und Fluid}
 	\framesubtitle{Fluid ViewHelpers (1)}
 
 	% decrease font size for code listing
 	\lstset{basicstyle=\fontsize{6}{8}\ttfamily}
 
 	\begin{itemize}
-		\item All Fluid ViewHelper classes will be declared "\texttt{final}" in
-			TYPO3 v12
-		\item Third-party extensions can no longer extend them with own variants
-		\item Extension developers are advised to use the abstract classes
-			provided by Fluid (if they are not marked \texttt{\@internal})
-		\item Developers are encouraged to make appropriate adjustments to their
-			custom ViewHelpers in TYPO3 v11 already
+		\item Alle Fluid ViewHelper-Klassen werden in TYPO3 v12 als "\texttt{final}"
+			deklariert
+		\item Drittanbieter-Erweiterungen können diese nicht mehr mit eigenen Varianten erweitern
+		\item Entwicklern von Erweiterungen wird empfohlen, die von Fluid
+			bereitgestellten abstrakten Klassen zu verwenden (sofern sie nicht als \texttt{\@intern} gekennzeichnet sind)
+		\item Entwickler sind aufgefordert, ihre benutzerdefinierten ViewHelper
+			bereits in TYPO3 v11 entsprechend anzupassen
 	\end{itemize}
 
 \end{frame}
