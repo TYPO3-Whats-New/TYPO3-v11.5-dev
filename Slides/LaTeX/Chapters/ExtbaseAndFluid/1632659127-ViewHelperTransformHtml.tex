@@ -8,19 +8,19 @@
 % Feature | 95176 | Introduce <f:transformhtml> view helper
 
 \begin{frame}[fragile]
-	\frametitle{Extbase and Fluid}
+	\frametitle{Extbase und Fluid}
 	\framesubtitle{Fluid ViewHelpers (2)}
 
 	% decrease font size for code listing
 	\lstset{basicstyle=\fontsize{8}{10}\ttfamily}
 
 	\begin{itemize}
-		\item A new ViewHelper has been introduced:\newline
+		\item Ein neuer ViewHelper wurde eingeführt:\newline
 			\small\texttt{<f:transform.html>}\normalsize
-		\item The ViewHelper resolves and transforms individual TYPO3 link handlers
-			such as \texttt{t3://}-URIs
-		\item It is independent from any TypoScript configuration and works
-			without mixing concerns in \small\texttt{ContentObjectRenderer::parseFunc}
+		\item Der ViewHelper löst einzelne TYPO3-Link-Handler auf und 
+			transformiert sie wie z.B. \texttt{t3://}-URIs.
+		\item Er ist unabhängig von jeder TypoScript-Konfiguration und funktioniert ohne
+			Vermischung von Belangen/der Anliegen in \small\texttt{ContentObjectRenderer::parseFunc}
 \begin{lstlisting}
 <f:transform.html selector="a.href,div.data-uri">
   <a href="t3://page?uid=1" class="page">visit</a>
